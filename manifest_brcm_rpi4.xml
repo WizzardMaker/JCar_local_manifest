@@ -3,7 +3,7 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Raspberry Pi -->
-  <project path="device/brcm/rpi4" name="grapeup/aaos_device_brcm_rpi4" remote="github" revision="android-13.0" >
+  <project path="device/brcm/rpi4" name="WizzardMaker/aaos_device_brcm_rpi4" remote="github" revision="android-13.0" >
     <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
   </project>
     <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-13.0" />
@@ -65,5 +65,9 @@
   <!-- Wifi -->
   <remove-project name="platform/packages/modules/Wifi" />
   <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-13.0" />
+
+  <!-- Apps -->
+  <remove-project name="platform/packages/apps/Car/Radio" />
+  <project path="platform/packages/apps/Car/Radio" name="WizzardMaker/JCar-Radio" remote="github" revision="master" />
 
 </manifest>
