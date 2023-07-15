@@ -3,7 +3,7 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Raspberry Pi -->
-  <project path="device/brcm/rpi4" name="WizzardMaker/aaos_device_brcm_rpi4" remote="github" revision="android-13.0" >
+  <project path="device/brcm/rpi4" name="WizzardMaker/JCar_device_brcm_rpi4" remote="github" revision="android-13.0" >
     <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
   </project>
     <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-13.0" />
@@ -68,6 +68,9 @@
 
   <!-- Apps -->
   <remove-project name="platform/packages/apps/Car/Radio" />
-  <project path="platform/packages/apps/Car/Radio" name="WizzardMaker/JCar-Radio" remote="github" revision="master" />
+  <project path="packages/apps/Car/Radio" name="WizzardMaker/JCar-Radio" remote="github" revision="android-13.0" />
+
+  <!-- Vendor -->
+  <project path="vendor/JCar" name="WizzardMaker/JCar-Vendor" remote="github" revision="android-13.0" />
 
 </manifest>
